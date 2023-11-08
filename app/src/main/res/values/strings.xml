@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">AplikasiPetShop</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_text_login_signin">Login</string>
+    <string name="text_signin_register">Tidak memiliki akun?</string>
+    <string name="register">Register</string>
+    <string name="name">Name</string>
+    <string name="text_signup_to_signin">Memiliki akun?</string>
+    <string name="log_in">Login</string>
+    <string name="btn_text_register">Register</string>
+    <string name="title_scan">Scan</string>
+    <string name="title_profile">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="account">Account</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="no_permission">" Tidak mendapatkan ijin"</string>
+    <string name="cara">Cara Mengolah :</string>
+    <string name="logout_success">Kamu telah berhasil keluar. kembali ke halaman login</string>
+    <string name="add_picture_warn">"Tolong masukkan gambar terlebih dahulu."</string>
+    <string name="PET">PET adalah singkatan dari Polyethylene Terephthalate, Plastik ini digunakan untuk membuat wadah paling umum di pasar minuman ringan saat ini, yaitu botol plastik. Sampah jenis PET bisa didaur ulang dan biasa digunakan untuk kemasan minuman ringan berkarbonasi, air kemasan, susu, jus, minuman olahraga dan energi, toples, punnets, bak dan nampan untuk makanan, botol untuk rumah tangga, produk perawatan pribadi, dan lembaran dan film untuk kemasan, PET adalah jenis plastik berlabel kode # 1 di atas atau di dekat dasar botol dan wadah.</string>
+    <string name="Glass">Glass adalah limbah yang berbahan kaca dan berasal dari penggunaan pada kegiatan sehari-hari, baik di industri maupun kegiatan lainnya.Limbah botol kaca, banyak dijumlah di lingkungan sekitar, dapat berasal dari konsumsi minuman, saus, selai, atau kecap. Limbah tersebut merupakan material yang secara alami tidak dapat didaur ulang.</string>
+    <string name="AluCan">Aluminium Can atau Kaleng merupakan salah satu sampah anorganik yang perlu didaur ulang. Kaleng sering digunakan untuk mengemas makanan, minuman, atau produk lain.</string>
+    <string name="rec_title">Cara Membuat Gelas Kopi Dari Botol Bekas/Cutting Bottle/Glass Bottle</string>
+    <string name="link">https://youtu.be/6c5wz8WNUMk</string>
+    <string name="scan">Scan Sampahmu</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>

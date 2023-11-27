@@ -6,7 +6,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.aplikasipetshop.R
 import com.example.aplikasipetshop.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -21,15 +20,27 @@ class HomeFragment : Fragment() {
         // Inflate the layout for this fragment
         _binding = FragmentHomeBinding.inflate(inflater,container, false)
         return binding.root
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        //binding.scanIcon.setOnClickListener {
-        //    val intentToScan = Intent(activity, ScanningActivity::class.java)
-        //    startActivity(intentToScan)
-        //}
+        binding.materialCardView2.setOnClickListener {
+            val intentToEtalase = Intent(activity, EtalaseActivity::class.java)
+            startActivity(intentToEtalase)
+        }
+
+        binding.faq.setOnClickListener {
+            val intentToFaq = Intent(activity, FaqActivity::class.java)
+            startActivity(intentToFaq)
+        }
+
+        binding.tips.setOnClickListener {
+            val intentToTips = Intent(activity, TipsActivity::class.java)
+            startActivity(intentToTips)
+        }
+
     }
 
     override fun onDestroyView() {

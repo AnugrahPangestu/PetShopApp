@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.UpdateProfileActivity">
+
+    <ImageView
+        android:id="@+id/add_image_qr"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/picsboard1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_codeQR" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Alamat"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/tv_address"
+        app:layout_constraintTop_toBottomOf="@+id/tv_address" />
+
+    <TextView
+        android:id="@+id/tv_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="No HP"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_address" />
+
+    <EditText
+        android:id="@+id/edt_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/edt_address"
+        app:layout_constraintStart_toStartOf="@+id/edt_address"
+        app:layout_constraintTop_toBottomOf="@+id/tv_phone_number" />
+
+    <TextView
+        android:id="@+id/tv_codeQR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Code QR Dana"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_phone_number" />
+
+    <Button
+        android:id="@+id/button_finish_update_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        android:text="SELESAI"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_add_image_qr" />
+
+    <Button
+        android:id="@+id/btn_add_image_qr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ganti Gambar"
+        android:backgroundTint="@color/red"
+        app:layout_constraintEnd_toEndOf="@+id/add_image_qr"
+        app:layout_constraintStart_toStartOf="@+id/add_image_qr"
+        app:layout_constraintTop_toBottomOf="@+id/add_image_qr" />
+
+    <TextView
+        android:id="@+id/tv_test_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_finish_update_profile" />
+
+    <TextView
+        android:id="@+id/tv_test_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/tv_test_address"
+        app:layout_constraintStart_toStartOf="@+id/tv_test_address"
+        app:layout_constraintTop_toBottomOf="@+id/tv_test_address" />
+
+    <TextView
+        android:id="@+id/tv_test_qr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sudah Diisi"
+        app:layout_constraintEnd_toEndOf="@+id/tv_test_phone"
+        app:layout_constraintStart_toStartOf="@+id/tv_test_phone"
+        app:layout_constraintTop_toBottomOf="@+id/tv_test_phone" />
+
+    <TextView
+        android:id="@+id/tv_test_path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wew"
+        app:layout_constraintEnd_toEndOf="@+id/tv_test_qr"
+        app:layout_constraintStart_toStartOf="@+id/tv_test_qr"
+        app:layout_constraintTop_toBottomOf="@+id/tv_test_qr" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

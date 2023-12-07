@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    tools:context=".ui.user.LoginUserFragment">
+
+    <ImageView
+        android:id="@+id/iv_app"
+        app:layout_constraintBottom_toTopOf="@+id/edt_input_email_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/logologineweb" />
+
+    <com.example.aplikasipetshop.custom.EmailInputLayout
+        android:id="@+id/edt_input_email_login"
+        app:layout_constraintBottom_toTopOf="@+id/edt_input_password_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:startIconDrawable="@drawable/ic_baseline_email_24"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp" />
+
+    <com.example.aplikasipetshop.custom.PasswordInputLayout
+        android:id="@+id/edt_input_password_login"
+        app:layout_constraintBottom_toTopOf="@+id/btn_login"
+        app:layout_constraintEnd_toEndOf="@+id/edt_input_email_login"
+        app:layout_constraintStart_toStartOf="@+id/edt_input_email_login"
+        app:layout_constraintTop_toBottomOf="@+id/edt_input_email_login"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:alpha="0" />
+
+    <Button
+        android:id="@+id/btn_login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edt_input_password_login"
+        app:layout_constraintStart_toStartOf="@+id/edt_input_password_login"
+        app:layout_constraintTop_toBottomOf="@+id/edt_input_password_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="100dp"
+        android:alpha="0"
+        android:enabled="false"
+        android:text="@string/btn_text_login_signin"
+        tools:ignore="VisualLintButtonSize" />
+
+    <TextView
+        android:id="@+id/tv_to_register"
+        app:layout_constraintEnd_toStartOf="@+id/btn_to_register"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@+id/btn_login"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:alpha="0"
+        android:text="@string/text_signin_register"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/btn_to_register"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_to_register"
+        app:layout_constraintEnd_toEndOf="@+id/btn_login"
+        app:layout_constraintStart_toEndOf="@+id/tv_to_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:alpha="0"
+        android:text="@string/register"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:progressTint="@color/design_default_color_primary"
+        android:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -76,7 +76,7 @@ class LoginFragment : Fragment() {
 
                 showLoading(true)
                 auth.signInWithEmailAndPassword(email, password)
-                    .addOnCompleteListener(requireActivity()) {
+                    .addOnSuccessListener(requireActivity()) {
                         showLoading(false)
                         val intent = Intent(activity, HomeActivity::class.java)
                         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
@@ -86,11 +86,8 @@ class LoginFragment : Fragment() {
                     }
                     .addOnFailureListener { error ->
                         showLoading(false)
-                        Toast.makeText(
-                            activity,
-                            error.localizedMessage,
-                            Toast.LENGTH_SHORT
-                        ).show()
+                        //Toast.makeText(activity, error.localizedMessage, Toast.LENGTH_SHORT).show()
+                        Toast.makeText(activity, "Username atau Password Salah\nCoba Lagi", Toast.LENGTH_SHORT).show()
                     }
             }
             btnToRegister.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_loginFragment_to_registerFragment))
